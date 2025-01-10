@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--El Charset me permite utilizar caracteres especiales-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <!--Estilo css-->
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <!--
+    <h1>Primera Página Web</h1>
+    <h2>Subtitulo</h2>
+    <h3>Subtitulo del Subtitulo</h3>
+    <h4>Subtitulo del Subtitulo</h4>
+    <h5>Subtitulo del Subtitulo</h5>
+    <h6>Subtitulo del Subtitulo</h6>
+    -->
+    <section class="container"> <!--Header de la Pagina Web-->
+
+      <div>
+        <header> <!--Titulo-->
+            <h1>Jueguito de Muñequito</h1>
+            <nav> <!--Header-->
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#proceso" class="nav-link">Proceso</a>
+                <a href="#calendario" class="nav-link">Calendario</a>
+                <a href="" class="nav-link">Referencias</a>
+            </nav> <!--Fin de Header-->
+        </header>
+      </div>
+
+      <div> <!--Contenido Principal-->
+        <section id="inicio" class="section"><!--Inicio de la Pagina-->
+            <h2>Bienvenido a mi paina Web</h2>
+            <p>Aquí vas a encontrar todo sobre mi juego</p>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <img src="img/it takes two.jpg" alt="web">
+                    <img src="img/controles.jpg" alt="">
+                    <img src="img/jugando.jpg" alt="">
+                </div>
+                <button class="carousel-btn prev" onclick="moveSlide(-1)">Back</button>
+                <button class="carousel-btn next" onclick="moveSlide(1)">Next</button>
+            </div>
+            
+        </section> <!--Fin del Inicio-->
+
+        <section> <!--Pagina de Proceso-->
+            <h2>Este es el proceso que seguí</h2>
+            <ul> <!--Lista desordenada-->
+                <!--Lsita de todo el Proceso-->
+                <li>Concepto</li>
+                <li>Artes</li>
+                <li>Modelado</li>
+                <li>Texturizado</li>
+                <li>Programación</li>
+                <li>Revision</li>
+                <li>Entrega al Publico</li>
+            </ul>
+        </section> <!--Fin de Pagina de Proceso-->
+
+        <section id="calendario" class="section">
+            <h2>Contactos</h2>
+            <table class="table">
+                <tr>
+                   <th>Número</th>
+                   <th>Nombre</th>
+                   <th>Categoría</th>
+                   <th>Lanzamiento</th>
+                   <th>Imagen</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>The Legend of Zelda: Tears of the Kingdom</td>
+                    <td>Aventura, Acción</td>
+                    <td>12-Mayo-2023</td>
+                    <td><img src="img/The Legend of Zelda Tears of the Kingdom.webp" alt="" width="25" height="25"></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Super Mario Bros. Wonder</td>
+                    <td>Plataforma</td>
+                    <td>20-Octubre-2023</td>
+                    <td><img src="img/Super Mario Bros. Wonder.png" alt="" width="25" height="25"></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Starfield</td>
+                    <td>RPG, Ciencia ficción</td>
+                    <td>06-September-2023</td>
+                    <td><img src="img/Starfield.jpg" alt="" width="25" height="25"></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Spider-Man 2</td>
+                    <td>Acción, Aventura</td>
+                    <td>20-Octubre-2023</td>
+                    <td><img src="img/Spider-Man 2.jpg" alt="" width="25" height="25"></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Assassin's Creed Mirage</td>
+                    <td>Acción, Aventura, Mundo abierto</td>
+                    <td>05-Octubre-2023</td>
+                    <td><img src="img/Assassin's Creed Mirage.webp" alt="" width="25" height="25"></td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>Baldur's Gate 3</td>
+                    <td>RPG</td>
+                    <td>03-Agosto-2023</td>
+                    <td><img src="img/Baldur's Gate 3.jpg" alt="" width="25" height="25"></td>
+                </tr>
+                
+                <tr>
+                    <td>7</td>
+                    <td>Hogwarts Legacy</td>
+                    <td>Acción, Aventura, Mundo abierto</td>
+                    <td>10-Febrero-2023</td>
+                    <td><img src="img/Hogwarts Legacy.webp" alt="" width="25" height="25"></td>
+                </tr>
+                
+
+            </table>
+
+        </section> <!--Fin del Calendario-->
+
+        <section id="formulario" class="section"> <!--Formulario-->
+            <h2>Formulario</h2>
+            <form action="" method="post" class="form"> <!--Formulario Estructura-->
+               
+                <!--FORMULARIO NOMBRE-->
+                <div class="form-group">
+                    <label for="nombre">Ingrese su Nombre</label>
+                    <div>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+                </div> <!--TERMINA FORMULARIO NOMBRE-->
+
+                <!--FORMULARIO CONTRASEÑA-->
+                <div>
+                    <label for="Contraseña">Ingrese su Contraseña</label>
+                    <div> 
+                        <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required>
+                    </div>
+                </div> <!--TERMINA FORMULARIO CONTRASEÑA-->
+                
+                <!--FORMULARIO EMAIL-->
+                <div>
+                    <label for="email">Imgrese su e mail</label>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Ingrese su email">
+                    </div>      
+                </div> <!--TERMINA FORMULARIO EMAIL-->
+
+                <!--FORMULARIO CIUDAD-->
+                <div>
+                    <label for="">Seleccione su Ciudad</label>
+                    <div>
+                        <select name="" id="">
+                            <option value="">---Seleccione una Opcioón---</option>
+                            <option value="Quito">Quito</option>
+                            <option value="Cuenca">Cuenca</option>
+                            <option value="Guayaquil">Guayaquil</option>
+                            <option value="Ibarra">Ibarra</option>
+                        </select>
+                    </div>
+                </div> <!--TERMINA FORMULARIO CIUDAD-->
+
+                <!--FORMULARIO DIRECCIÓN-->
+                <div>
+                    <label for="">Ingrese su Dirección</label>
+                    <div>
+                        <textarea name="direccion" id="direccion" placeholder="Ingrese su Dirección"></textarea>
+                    </div>
+                </div> <!--TERMINA FORMULARIO DIRECCIÓN-->
+
+                <!--FORMULARIO EDAD-->
+                <div>
+                    <label for="">Seleccione sus Talentos</label>
+                    <div>
+                        <input type="checkbox">
+                        <label for="">12</label>
+                        
+                    </div>
+                </div>
+
+                <!--FORMULARIO EDAD-->
+                <div>
+                    <label for="">Seleccione su Edad</label>
+                    <div>
+                        <input type="radio">
+                        <label for="">15-20</label>
+                    </div>
+                    <div>
+                        <input type="radio">
+                        <label for="">20-25</label>
+                    </div>
+                    <div>
+                        <input type="radio">
+                        <label for="">25-30</label>
+                    </div>
+                    <div>
+                        <input type="radio">
+                        <label for="">30-35</label>
+                    </div>
+                    <div>
+                        <input type="radio">
+                        <label for="">35-40</label>
+                    </div>
+                    <div>
+                        <input type="radio">
+                        <label for="">40-50</label>
+                    </div>
+                </div>
+
+
+
+                <div> <!--Boton Enviar-->
+                    <input type="submit" value="ENVIAR">
+                </div> <!--Fin Boton Enviar-->
+                
+            </form>
+        </section>
+      </div>
+    </section> 
+
+    <script>
+        //Creamos una Variable para rastrear el indice actual de Slide activo
+        let currentIndex=0;
+
+        //Creamos una funcion que mueva el slide en la direccion indicada
+        function moveSlide(direction){
+            //Seleccionamos todos los elenmenos de las imagenes dentro del carrusel
+            const slides=document.querySelectorAll('.carousel-inner img')
+
+            //Obtenemos el numero de imagenes
+            const totalSlide=slides.length;
+
+            //Actualizamos el indice actual sumando la direccion (1 o -1)
+            currentIndex+=direction;
+
+            //Si el indice es menor a 0, cuelve al ultimo slide (loop hacia atras)
+            if(currentIndex<0){
+                currentIndex=totalSlide-1
+            }
+
+            //Si el indice es mayor al ultmi slide, vuelve al primero
+            if(currentIndex>totalSlide){
+                currentIndex=0
+            }
+
+            //Calculamos el desplazamiento del carrusel, basado en el indice actual
+            const offset=-currentIndex*100;
+            
+            //Aplicamos el Desplazamiento mediante una transformacion CS para mover los slides
+            document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+        }
+
+        //Configuramos el cambio automatico del slide cada 5 segs
+        setInterval(() => {
+            //Llama la funcion moveslide con valor de 1, para avanzar al siguiente 
+            moveSlide(1);
+        }, 5000);
+
+    </script>
+
+</body>
+</html>
